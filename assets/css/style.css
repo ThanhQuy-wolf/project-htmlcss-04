@@ -303,3 +303,168 @@ a {
 .header--link:hover {
     text-decoration: underline;
 }
+
+/* =========== About =========== */
+.main__about {
+    padding: 53px 0;
+    margin-top: 171px;
+}
+
+.about__container {
+    display: flex;
+}
+
+.about--sub-title {
+    margin-top: 77px;
+    font-family: var(--font-sora);
+    font-weight: 600;
+    color: var(--text-color-gray);
+}
+
+.about--title {
+    width: 446px;
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.about--desc {
+    width: 431px;
+    max-width: 100%;
+    margin-top: 24px;
+    font-weight: 400;
+    line-height: 1.88;
+    color: var(--second-color);
+}
+
+.about__checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-top: 54px;
+}
+
+.checkbox__row {
+    display: flex;
+    
+}
+
+.checkbox__row.row--1 {
+    gap: 62px;
+}
+
+.checkbox__row.row--2 {
+    gap: 36px;
+}
+
+.about__checkbox label {
+    position: relative;
+    padding-left: 34px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #48496A;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: color .2s;
+}
+
+.checkbox [type='checkbox']:checked ~ label {
+    color: #FF5D31;
+}
+
+.checkbox [type='checkbox'] ~ label::before {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background: #FF5D31;
+}
+
+.checkbox [type='checkbox']:checked ~ label::after{
+    position: absolute;
+    left: 7px;
+    bottom: 11px;
+    content: "";
+    width: 8px;
+    height: 4px;
+    border-bottom: 2px solid #FFF2E5;
+    border-left: 2px solid #FFF2E5;
+    rotate: -50deg;
+}
+
+.about__images {
+    position: relative;
+    margin-left: 200px;
+}
+
+.about__images--bg.right {
+    position: absolute;
+    right: -33px;
+    top: 207px;
+    z-index: -2;
+}
+
+.about__images--bg.center {
+    position: absolute;
+    bottom: 0;
+    width: 449px;
+    height: calc(559px - 223px);
+    border-radius: 16px;
+    z-index: -1;
+    background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+}
+
+.about__images--image {
+    width: 450px;
+    height: 472px;
+    margin-left: 23px;
+    flex-shrink: 0;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: -100px;
+    width: 136px;
+    height: 156px;
+    flex-shrink: 0;
+    padding: 21px 26px 29px;
+    border-radius: 10px;
+    background: #5BD6E2;
+    box-shadow: -15px 26px 48px 0 rgba(85, 240, 255, 0.17);
+}
+
+.about__card--num {
+    font-family: var(--font-sora);
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.about__card--desc {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.43;
+    color: #C6F4F9;
+}
+
+.about__images--icon {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+}
