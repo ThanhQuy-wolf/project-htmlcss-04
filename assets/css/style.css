@@ -468,3 +468,143 @@ a {
     top: -40px;
     right: -30px;
 }
+
+/* =========== Features =========== */
+.main__features {
+    margin-top: 77px;
+}
+
+.features__container {
+    display: flex;
+    justify-content: center;
+}
+
+.features__images {
+    position: relative;
+    margin-top: 16px;
+    margin-right: 127px;
+}
+
+.icons {
+    position: absolute;
+}
+
+.features--icon-1 {
+    right: 63px;
+    top: 13px;
+}
+
+.features--icon-2 {
+    top: -18px;
+    right: 15px;
+}
+
+.features--icon-3 {
+    top: 32px;
+    right: -25px;
+}
+
+.features--icon-4 {
+    bottom: -57px;
+    right: -39px;
+}
+
+.features__images--image {
+    width: 458px;
+    height: 500px;
+    border-radius: 18px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: right;
+    background: linear-gradient(180deg, #C6E2FA 0%, #94C2EA 100%);
+}
+
+.features__content {
+    margin-top: 52px;
+}
+
+.features--title {
+    font-family: var(--font-sora);
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.features--desc {
+    width: 511px;
+    max-width: 100%;
+    margin-top: 24px;
+    font-weight: 400;
+    line-height: 1.88;
+    color: var(--second-color);
+}
+
+.features__dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+
+.dashboard--item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard--text {
+    font-family: var(--font-sora);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #48496A;
+}
+
+.dashboard--line {
+    display: flex;
+    align-items: center;
+    width: 557px;
+    height: 2px;
+    margin-top: 11px;
+}
+
+.dashboard--line-bold {
+    width: 17%;
+    height: 2px;
+    background: var(--color-btn);
+}
+
+.dashboard--line-normal {
+    width: calc(100% - 17%);
+    height: 2px;
+    opacity: 0.07;
+    background: var(--color-btn);
+}
+
+.features--sub-dash {
+    width: 391px;
+    max-width: 100%;
+    margin-top: 36px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--second-color);
+}
+
+.features--link {
+    display: inline-block;
+    margin-top: 32px;
+    font-weight: 500;
+    color: #FF5D31;
+}
+
+.features--link-line {
+    width: 86px;
+    height: 1.5px;
+    margin-top: 5px;
+    visibility: hidden;
+    background: #FF5D31;
+}
+
+.features--link:hover + .features--link-line {
+    visibility: visible;
+}
