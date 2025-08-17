@@ -1114,7 +1114,7 @@ a {
     color: var(--color-btn);
 }
 
-.fa-arrow-right {
+.arrow-right {
     margin-left: 76px;
 }
 
@@ -1234,5 +1234,148 @@ a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.72;
+    color: var(--second-color);
+}
+
+/* =========== Footer =========== */
+.footer {
+    padding-bottom: 28px;
+    margin-top: 130px;
+    background: #FFF6ED;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer--on-left {
+    width: 615px;
+    height: 516px;
+    padding: 114px 0;
+    flex-shrink: 0;
+}
+
+form {
+    position: relative;
+    margin-top: 35px;
+}
+
+input, label {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.footer--input {
+    width: 268px;
+    height: 46px;
+    flex-shrink: 0;
+    padding: 16px 50px 16px 22px;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    opacity: 0.6;
+    background: #FFF;
+}
+
+.footer--label {
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    opacity: 0.4;
+    background: #fff;
+    transition: .2s;
+}
+
+form [type="email"]:focus + .footer--label {
+    opacity: 1;
+    transform: translateY(-32px);
+}
+
+.footer--btn {
+    border: none;
+    background: transparent;
+}
+
+.footer-arrow {
+    position: absolute;
+    left: 222px;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    padding: 15px 14px;
+}
+
+.footer--social-text {
+    margin-top: 68px;
+    font-family: var(--font-sora);
+    font-size: 1.8rem;;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.footer__social-list i {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: #fff;
+}
+
+.footer--on-right {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    margin-top: 52px;
+}
+
+.footer__row {
+    display: flex;
+    gap: 227px;
+}
+
+.footer__row.row--2 {
+    gap: 137px;
+}
+
+.footer__list--title {
+    margin-bottom: 16px;
+    font-family: var(--font-sora);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.footer--item {
+    margin-bottom: 7px;
+}
+
+.footer--item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__list--link, address {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    color: var(--second-color);
+}
+
+.footer__list--link:hover {
+    text-decoration: underline;
+}
+
+.footer--copy-right {
+    margin-left: -100px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.17;
     color: var(--second-color);
 }
